@@ -7,32 +7,39 @@ $(document.body).append(`<nav class="navbar navbar-light " style="background-col
       EOA Zombies
     </a>
   </nav>`);
-
 //***************End Nav Bar Render************************//
 
-// left nav bar for locations btn, weapons btn, portals btn(maybe) etc...
-
+//*********rend container with associated columns***********/
 $(document.body).append(
   `<div class="container-fluid">
   <div class="row">
     <div class="col-sm-3 leftnav">
-      
     </div>
-    <div class="col-sm-9">
-      second column visual placeholder
+
+    <div class="col-sm-9 rightdiv">
     </div>
   </div>
 </div>`
 );
+//**************end rend container with associated columns*******/
 
+//************rend navbar buttons******************/
 $(".leftnav").append(
-  `<div class="btn-group-vertical">
-  <button type="button" class="btn btn-secondary">Locations</button>
-  <button type="button" class="btn btn-secondary">Weapons</button>
-  <button type="button" class="btn btn-secondary">Wonder Weapons</button>
+  `<div class="btn-group-vertical navBtnGrp">
+  <button type="button" class="btn btn-secondary navBtns locationsBtn">Locations</button>
+  <button type="button" class="btn btn-secondary navBtns areasBtn">Areas</button>
+  <button type="button" class="btn btn-secondary navBtns weaponsBtn">Weapons</button>
+  <button type="button" class="btn btn-secondary navBtns trophiesBtn">Achievements/Trophies</button>
 </div>`
 );
+//****************end rend navbar buttons**************/
 
-// clear main div and dependant on btn clicked rend more buttons or show guide inside main div
+//****************rend landing page*********************/
+$(".rightdiv").append(`<img id="landimg" src="assets/images/landpic.jpg"/>`);
 
+
+
+
+//**************END DOC FUNCTION*******************/
 });
+//**************END DOC FUNCTION*********************/
