@@ -15,13 +15,21 @@ $(document.body).append(`<nav class="navbar navbar-light " style="background-col
 $(document.body).append(
   `<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-3">
-      first column visual placeholder
+    <div class="col-sm-3 leftnav">
+      
     </div>
     <div class="col-sm-9">
       second column visual placeholder
     </div>
   </div>
+</div>`
+);
+
+$(".leftnav").append(
+  `<div class="btn-group-vertical">
+  <button type="button" class="btn btn-secondary">Locations</button>
+  <button type="button" class="btn btn-secondary">Weapons</button>
+  <button type="button" class="btn btn-secondary">Wonder Weapons</button>
 </div>`
 );
 
